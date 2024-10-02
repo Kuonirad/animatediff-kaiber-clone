@@ -1,0 +1,53 @@
+# Information Log
+
+## Repository State
+- The `animatediff-kaiber-clone` repository has been cloned successfully.
+- The repository contains 81 objects, with a total size of 194.46 KiB.
+
+## Actions Taken
+1. Cleared all repositories from the user's GitHub account.
+2. Cloned the `KaiberAI/animatediff-kaiber` repository.
+3. Updated `generate.py` and `animate.py` scripts.
+4. Corrected dependencies in `requirements.txt` and `environment.yaml`.
+5. Refined `pipeline_animation.py` to fix errors and deprecation warnings.
+6. Enhanced `AnimationPipelineOutput` class and documented training code.
+7. Resolved `ModuleNotFoundError` for `omegaconf` by creating a virtual environment.
+8. Fixed `PyYAML` installation issue by installing version 6.0.2.
+9. Installed dependencies from `requirements.txt`, including `torch`, `torchvision`, and `torchaudio`.
+10. Fixed runtime error related to `torchvision::nms` by reinstalling compatible versions.
+11. Resolved `ModuleNotFoundError` for `animatediff` module by creating `setup.py` and adding `__init__.py` files.
+12. Fixed `ImportError` for `maybe_allow_in_graph` by pinning `diffusers` version to 0.14.0.
+13. Resolved subprocess error during `xformers` installation by upgrading `pip`, `setuptools`, and `wheel`.
+14. Resolved `ModuleNotFoundError` for `torchvision` by installing version 0.19.1.
+15. Fixed `ModuleNotFoundError` for `torchaudio` by installing version 2.0.1.
+16. Verified `torchaudio` installation and confirmed all imports were successful.
+17. Updated `huggingface_hub` package to fix import error.
+18. Encountered `ImportError` for `Attention` class and resolved by upgrading `diffusers` package.
+19. Faced `ModuleNotFoundError` for `diffusers.pipeline_utils` due to version mismatch.
+20. Downgraded `diffusers` and resolved `ImportError` for `DEISMultistepScheduler`.
+21. Attempted to run `animate.py` script using `config.yaml` but encountered `OSError`.
+22. Executed `0-MotionModule.sh` script to download necessary motion module checkpoints.
+23. Corrected `pretrained_model_path` in `animate.py` to `models/Motion_Module/`.
+24. Downloaded `DreamShaper_8_pruned.safetensors` file to `models` directory.
+25. Installed Git LFS to handle large files from Hugging Face.
+26. Created `download_models.sh` script to download necessary model files directly.
+27. Encountered space issues during download process and attempted to free up space.
+28. Explored directories to identify large files or subdirectories for removal.
+29. Checked available disk space and found `/dev/root` filesystem is 91% full.
+30. Continued to explore directories to identify potential files or subdirectories for removal.
+
+## Errors and Issues
+- `ModuleNotFoundError` for `omegaconf`, `animatediff`, `torchvision`, `torchaudio`.
+- `ImportError` for `maybe_allow_in_graph`, `Attention` class, `DEISMultistepScheduler`.
+- `OSError` related to missing model file from Hugging Face.
+- Space issues during download process.
+
+## System Information
+- `/dev/root` filesystem is 91% full, with only 12GB available.
+- `devinpool/home-dir` is 96% full, with only 318MB available.
+
+## Next Steps
+- Continue to explore directories to free up space.
+- Verify the downloaded files and ensure correct paths.
+- Commit and push changes to the repository.
+- Notify the user of completion.
